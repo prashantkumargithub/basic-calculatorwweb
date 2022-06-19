@@ -1,0 +1,47 @@
+
+<html>5
+<head> 
+   <title> calculator  BY PRASHNT KUMAR  VARMA </title> 
+<link rel="stylesheet" href="calcu.css"> 
+   </head>
+
+<body>
+    <h1> Calculator <br> Made by prashant kumar varma </h1>
+    
+    <div class="container">
+        <fieldset id="container"> 
+            <form name ="calculator">
+            
+                <input id="display" type="text" name ="display"   readonly>
+                <br>
+                <input class="button digits" type="button" value="7" onclick="calculator.display.value +='7'" readonly>
+                <input class="button digits" type="button" value="8" onclick="calculator.display.value +='8'" readonly>
+                <input class="button digits" type="button" value="9" onclick="calculator.display.value +='9'" readonly>
+                <input class="button mathbuttons" type="button" value="+" onclick="calculator.display.value +='+'" readonly>
+                <br>
+                <input class="button digits" type="button" value="4" onclick="calculator.display.value +='4'" readonly>
+                <input class="button digits" type="button" value="5" onclick="calculator.display.value +='5'" readonly>
+                <input class="button digits" type="button" value="6" onclick="calculator.display.value +='6'" readonly>
+                <input class="button mathbuttons" type="button" value="-" onclick="calculator.display.value +='-'" readonly>
+                <br>
+                <input class="button digits" type="button" value="1" onclick="calculator.display.value +='1'" readonly>
+                <input class="button digits" type="button" value="2" onclick="calculator.display.value +='2'" readonly>
+                <input class="button digits" type="button" value="3" onclick="calculator.display.value +='3'" readonly>
+                <input class="button mathbuttons" type="button" value="X" onclick="calculator.display.value +='*'" readonly>
+                <br>
+                <input class="button digits" type="button" value="00" onclick="calculator.display.value +='00'" readonly>
+                <input class="button digits" type="button" value="0" onclick="calculator.display.value +='0'" readonly>
+                <input class="button mathbuttons" type="button" value="="onclick="calculator.display.value=eval(calculator.display.value)">
+                <input class="button mathbuttons" type="button" value="/" onclick="calculator.display.value +='/'" readonly>
+                <br>
+                <input class="button digits" type="button" value="." onclick="calculator.display.value +='.'" readonly>
+                <input class="button mathbuttons" type="button" value="%" onclick="calculator.display.value +='%'" readonly>
+                <input id="clearButton"  class="button" type="button" value="C" onclick="calculator.display.value = ''" readonly>
+                
+                
+            </form>
+        </fieldset>
+    </div>
+ 
+</body>
+</html>
